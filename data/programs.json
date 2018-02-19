@@ -1,0 +1,347 @@
+[
+    {
+        "program": "NSUNS_4",
+        "label": "nSuns 4 Day",
+        "days": [
+            {
+                "day": "MONDAY",
+                "routines": [
+                    {
+                        "type": "BENCH",
+                        "sets": [
+                            {
+                                "reps": 8,
+                                "multiplier": 0.65
+                            },
+                            {
+                                "reps": 6,
+                                "multiplier": 0.75
+                            },
+                            {
+                                "reps": 4,
+                                "multiplier": 0.85
+                            },
+                            {
+                                "reps": 4,
+                                "multiplier": 0.85
+                            },
+                            {
+                                "reps": 4,
+                                "multiplier": 0.85
+                            },
+                            {
+                                "reps": 5,
+                                "multiplier": 0.8
+                            },
+                            {
+                                "reps": 6,
+                                "multiplier": 0.75
+                            },
+                            {
+                                "reps": 7,
+                                "multiplier": 0.7
+                            },
+                            {
+                                "reps": 8,
+                                "multiplier": 0.65,
+                                "amrap": true
+                            }
+                        ]
+                    },
+                    {
+                        "type": "OHP",
+                        "sets": [
+                            {
+                                "reps": 6,
+                                "multiplier": 0.5
+                            },
+                            {
+                                "reps": 5,
+                                "multiplier": 0.6
+                            },
+                            {
+                                "reps": 3,
+                                "multiplier": 0.7
+                            },
+                            {
+                                "reps": 5,
+                                "multiplier": 0.7
+                            },
+                            {
+                                "reps": 7,
+                                "multiplier": 0.7
+                            },
+                            {
+                                "reps": 4,
+                                "multiplier": 0.7
+                            },
+                            {
+                                "reps": 6,
+                                "multiplier": 0.7
+                            },
+                            {
+                                "reps": 8,
+                                "multiplier": 0.7
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "day": "TUESDAY",
+                "routines": [
+                    {
+                        "type": "SQUAT",
+                        "sets": [
+                            {
+                                "reps": 5,
+                                "multiplier": 0.75
+                            },
+                            {
+                                "reps": 3,
+                                "multiplier": 0.85
+                            },
+                            {
+                                "reps": 1,
+                                "multiplier": 0.95,
+                                "amrap": true
+                            },
+                            {
+                                "reps": 3,
+                                "multiplier": 0.9
+                            },
+                            {
+                                "reps": 3,
+                                "multiplier": 0.85
+                            },
+                            {
+                                "reps": 3,
+                                "multiplier": 0.8
+                            },
+                            {
+                                "reps": 5,
+                                "multiplier": 0.75
+                            },
+                            {
+                                "reps": 5,
+                                "multiplier": 0.7
+                            },
+                            {
+                                "reps": 5,
+                                "multiplier": 0.65,
+                                "amrap": true
+                            }
+                        ]
+                    },
+                    {
+                        "type": "SUMO",
+                        "sets": [
+                            {
+                                "reps": 5,
+                                "multiplier": 0.5
+                            },
+                            {
+                                "reps": 5,
+                                "multiplier": 0.6
+                            },
+                            {
+                                "reps": 3,
+                                "multiplier": 0.7
+                            },
+                            {
+                                "reps": 5,
+                                "multiplier": 0.7
+                            },
+                            {
+                                "reps": 7,
+                                "multiplier": 0.7
+                            },
+                            {
+                                "reps": 4,
+                                "multiplier": 0.7
+                            },
+                            {
+                                "reps": 6,
+                                "multiplier": 0.7
+                            },
+                            {
+                                "reps": 8,
+                                "multiplier": 0.7
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "day": "THURSDAY",
+                "routines": [
+                    {
+                        "type": "BENCH",
+                        "sets": [
+                            {
+                                "reps": 5,
+                                "multiplier": 0.75
+                            },
+                            {
+                                "reps": 3,
+                                "multiplier": 0.85
+                            },
+                            {
+                                "reps": 1,
+                                "multiplier": 0.95,
+                                "amrap": true
+                            },
+                            {
+                                "reps": 3,
+                                "multiplier": 0.9
+                            },
+                            {
+                                "reps": 5,
+                                "multiplier": 0.85
+                            },
+                            {
+                                "reps": 3,
+                                "multiplier": 0.8
+                            },
+                            {
+                                "reps": 5,
+                                "multiplier": 0.75
+                            },
+                            {
+                                "reps": 3,
+                                "multiplier": 0.7
+                            },
+                            {
+                                "reps": 5,
+                                "multiplier": 0.65,
+                                "amrap": true
+                            }
+                        ]
+                    },
+                    {
+                        "type": "CG_BENCH",
+                        "sets": [
+                            {
+                                "reps": 6,
+                                "multiplier": 0.4
+                            },
+                            {
+                                "reps": 5,
+                                "multiplier": 0.5
+                            },
+                            {
+                                "reps": 3,
+                                "multiplier": 0.6
+                            },
+                            {
+                                "reps": 5,
+                                "multiplier": 0.6
+                            },
+                            {
+                                "reps": 7,
+                                "multiplier": 0.6
+                            },
+                            {
+                                "reps": 4,
+                                "multiplier": 0.6
+                            },
+                            {
+                                "reps": 6,
+                                "multiplier": 0.6
+                            },
+                            {
+                                "reps": 8,
+                                "multiplier": 0.6
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "day": "FRIDAY",
+                "routines": [
+                    {
+                        "type": "DEADLIFT",
+                        "sets": [
+                            {
+                                "reps": 5,
+                                "multiplier": 0.75
+                            },
+                            {
+                                "reps": 3,
+                                "multiplier": 0.85
+                            },
+                            {
+                                "reps": 1,
+                                "multiplier": 0.95,
+                                "amrap": true
+                            },
+                            {
+                                "reps": 3,
+                                "multiplier": 0.9
+                            },
+                            {
+                                "reps": 3,
+                                "multiplier": 0.85
+                            },
+                            {
+                                "reps": 3,
+                                "multiplier": 0.8
+                            },
+                            {
+                                "reps": 3,
+                                "multiplier": 0.75
+                            },
+                            {
+                                "reps": 3,
+                                "multiplier": 0.7
+                            },
+                            {
+                                "reps": 3,
+                                "multiplier": 0.65,
+                                "amrap": true
+                            }
+                        ]
+                    },
+                    {
+                        "type": "FRONT_SQUAT",
+                        "sets": [
+                            {
+                                "reps": 5,
+                                "multiplier": 0.35
+                            },
+                            {
+                                "reps": 5,
+                                "multiplier": 0.45
+                            },
+                            {
+                                "reps": 3,
+                                "multiplier": 0.55
+                            },
+                            {
+                                "reps": 5,
+                                "multiplier": 0.55
+                            },
+                            {
+                                "reps": 7,
+                                "multiplier": 0.55
+                            },
+                            {
+                                "reps": 4,
+                                "multiplier": 0.55
+                            },
+                            {
+                                "reps": 6,
+                                "multiplier": 0.55
+                            },
+                            {
+                                "reps": 8,
+                                "multiplier": 0.55
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
