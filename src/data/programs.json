@@ -343,5 +343,9 @@
                 ]
             }
         ]
+    },
+    {
+        "program": "N_SUNS_5",
+        "label": "nSuns 5 Day"
     }
 ]
