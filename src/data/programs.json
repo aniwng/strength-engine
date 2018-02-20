@@ -346,6 +346,7 @@
     },
     {
         "program": "N_SUNS_5",
-        "label": "nSuns 5 Day"
+        "label": "nSuns 5 Day",
+        "days": []
     }
 ]

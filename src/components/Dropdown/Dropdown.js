@@ -1,21 +1,13 @@
 import React, { Component } from 'react';
 
 class Dropdown extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            currentProgram: this.props.programs[0]
-        }
-    }
-
     changeProgram(e) {
-        this.setState({currentProgram: e.target.value});
         this.props.onChange(e.target.value);
     }
 
     render() {
-        const programs = this.props.programs;
-        const listItems = programs.map(program =>
+        const programList = this.props.programList;
+        const listItems = programList.map(program =>
             <option value={program} key={program}>
                 {program}
             </option>
