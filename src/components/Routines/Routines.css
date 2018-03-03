@@ -1,0 +1,11 @@
+.routine-container {
+    display: flex;
+}
+
+.routine-container:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.routine-container .day-of-week {
+    width: 12%;
+}

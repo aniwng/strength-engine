@@ -1,3 +1,10 @@
+body {
+    font-family: tahoma;
+    letter-spacing: 1px;
+    background-color: #808080;
+    color: #808080;
+}
+
 .container {
     margin: 0 auto;
     width: 60%;

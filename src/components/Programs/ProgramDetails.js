@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Routines from '../Routines/Routines';
 
+import './ProgramDetails.css';
+
 class ProgramDetails extends Component {
     render() {
         if(this.props.details.days) {

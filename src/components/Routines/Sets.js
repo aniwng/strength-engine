@@ -8,7 +8,7 @@ class Sets extends Component {
 
         const listItems = sets.map((set, i) =>
             <div key={`${this.props.day}-${this.props.type}-${i}`}>
-                <span>{set.reps} x {set.multiplier}</span>
+                {set.reps} x {set.multiplier}
             </div>
         );
 
