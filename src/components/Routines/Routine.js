@@ -7,7 +7,7 @@ class Routine extends Component {
 
         const listItems = routines.map(routine =>
             <div key={routine.type}>
-                {routine.type}
+                {routine.label}
                 <Sets day={this.props.day} type={routine.type} sets={routine.sets}/>
             </div>
         );
