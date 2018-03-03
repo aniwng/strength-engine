@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import './Dropdown.css';
+
 class Dropdown extends Component {
     changeProgram(e) {
         this.props.onChange(e.target.value);
@@ -8,12 +10,12 @@ class Dropdown extends Component {
     render() {
         const programList = this.props.programList;
         const listItems = programList.map(program =>
-            <option value={program} key={program}>
-                {program}
+            <option value={program.program} key={program.program}>
+                {program.label}
             </option>
         );
         return (
-            <select onChange={this.changeProgram.bind(this)}>{listItems}</select> 
+            <select className="program-dropdown" onChange={this.changeProgram.bind(this)}>{listItems}</select> 
         );   
     }
 }

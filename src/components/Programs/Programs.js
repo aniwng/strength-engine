@@ -14,9 +14,14 @@ class Programs extends Component {
     }
 
     componentDidMount() {
-        const programList = ProgramData.map(program => program.program);
+        const programList = ProgramData.map(program => {
+            return {
+                program: program.program,
+                label: program.label
+            }
+        });
         this.setState({programList: programList});
-        this.handleChange(programList[0]);
+        this.handleChange(programList[0].program);
     }
 
     handleChange(selectedProgram) {
