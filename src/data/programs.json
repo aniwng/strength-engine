@@ -8,6 +8,7 @@
                 "routines": [
                     {
                         "type": "BENCH",
+                        "label": "Bench",
                         "sets": [
                             {
                                 "reps": 8,
@@ -50,6 +51,7 @@
                     },
                     {
                         "type": "OHP",
+                        "label": "Overhead Press",
                         "sets": [
                             {
                                 "reps": 6,
@@ -92,6 +94,7 @@
                 "routines": [
                     {
                         "type": "SQUAT",
+                        "label": "Squat",
                         "sets": [
                             {
                                 "reps": 5,
@@ -135,6 +138,7 @@
                     },
                     {
                         "type": "SUMO",
+                        "label": "Sumo Deadlift",
                         "sets": [
                             {
                                 "reps": 5,
@@ -177,6 +181,7 @@
                 "routines": [
                     {
                         "type": "BENCH",
+                        "label": "Bench",
                         "sets": [
                             {
                                 "reps": 5,
@@ -220,6 +225,7 @@
                     },
                     {
                         "type": "CG_BENCH",
+                        "label": "Close Grip Bench",
                         "sets": [
                             {
                                 "reps": 6,
@@ -262,6 +268,7 @@
                 "routines": [
                     {
                         "type": "DEADLIFT",
+                        "label": "Deadlift",
                         "sets": [
                             {
                                 "reps": 5,
@@ -305,6 +312,7 @@
                     },
                     {
                         "type": "FRONT_SQUAT",
+                        "label": "Front Squat",
                         "sets": [
                             {
                                 "reps": 5,
