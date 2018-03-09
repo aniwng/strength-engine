@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import Dropdown from '../Dropdown/Dropdown';
 import ProgramDetails from '../Programs/ProgramDetails';
+import TrainingInputs from '../TrainingInputs/TrainingInputs';
+
+import './Programs.css';
 
 import ProgramData from '../../data/programs.json';
 
@@ -34,7 +37,10 @@ class Programs extends Component {
     render() {
         return (
             <div>
-                <Dropdown programList={this.state.programList} onChange={this.handleChange.bind(this)}/>
+                <div id="user-input-container">
+                    <Dropdown programList={this.state.programList} onChange={this.handleChange.bind(this)}/>
+                    <TrainingInputs/>
+                </div>
                 <ProgramDetails details={this.state.currentProgramDetails}/>
             </div>    
         );

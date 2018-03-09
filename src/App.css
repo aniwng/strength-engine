@@ -8,4 +8,5 @@ body {
 .container {
     margin: 0 auto;
     width: 60%;
+    border: #D8BFAA 30px solid;
 }
