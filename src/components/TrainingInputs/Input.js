@@ -4,7 +4,7 @@ import './Input.css';
 
 class Input extends Component {
     inputChange(e) {
-        this.props.onChange(e.target.value);
+        this.props.onChange(this.props.label, e.target.value);
     }
 
     render() {

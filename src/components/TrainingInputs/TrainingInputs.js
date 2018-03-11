@@ -4,17 +4,18 @@ import Input from './Input';
 import './TrainingInputs.css';
 
 class TrainingInputs extends Component {
-    trainingNumChange(trainingNum) {
-        this.props.onChange(trainingNum);
+    trainingNumChange(type, trainingNum) {
+        this.props.onChange(type, trainingNum);
     }
 
     render() {
+        const inputs = Array.from(this.props.inputs.keys());
+        const listItems = inputs.map(input =>
+            <Input label={input} key={input} onChange={this.trainingNumChange.bind(this)}/>
+        );
         return (
             <div className="training-input-container">
-                <Input label="Squat" onChange={this.trainingNumChange.bind(this)}/>
-                <Input label="Bench" onChange={this.trainingNumChange.bind(this)}/>
-                <Input label="Deadlift" onChange={this.trainingNumChange.bind(this)}/>
-                <Input label="Press" onChange={this.trainingNumChange.bind(this)}/>
+                {listItems}
             </div>
         );
     }

@@ -13,7 +13,7 @@ class Programs extends Component {
         this.state = {
             programList: [],
             currentProgramDetails: {},
-            input: 100
+            inputs: []
         }
     }
 
@@ -32,11 +32,22 @@ class Programs extends Component {
         const currentProgram = ProgramData.find(program => {
             return program.program === selectedProgram;
         });
-        this.setState({currentProgramDetails: currentProgram});
+        const inputValues = currentProgram.inputs.reduce((map, obj) => {
+            map.set(obj, 0);
+            return map;
+        }, new Map());
+        this.setState({
+            currentProgramDetails: currentProgram,
+            inputs: inputValues
+        });
     }
 
-    handleTrainingChange(trainingNum) {
-        this.setState({input: trainingNum});
+    handleTrainingChange(type, trainingNum) {
+        const inputs = this.state.inputs;
+        inputs.set(type, trainingNum);
+        this.setState({
+            inputs: inputs
+        });
     }
 
     render() {
@@ -44,9 +55,9 @@ class Programs extends Component {
             <div>
                 <div id="user-input-container">
                     <Dropdown programList={this.state.programList} onChange={this.handleChange.bind(this)}/>
-                    <TrainingInputs onChange={this.handleTrainingChange.bind(this)}/>
+                    <TrainingInputs inputs={this.state.inputs} onChange={this.handleTrainingChange.bind(this)}/>
                 </div>
-                <ProgramDetails details={this.state.currentProgramDetails} input={this.state.input}/>
+                <ProgramDetails details={this.state.currentProgramDetails} inputs={this.state.inputs}/>
             </div>    
         );
     }

@@ -2,6 +2,7 @@
     {
         "program": "NSUNS_4",
         "label": "nSuns 4 Day",
+        "inputs": ["SQUAT", "BENCH", "DEADLIFT", "OHP"],
         "days": [
             {
                 "day": "MONDAY",
@@ -142,35 +143,43 @@
                         "sets": [
                             {
                                 "reps": 5,
-                                "multiplier": 0.5
+                                "multiplier": 0.5,
+                                "setValue": "SQUAT"
                             },
                             {
                                 "reps": 5,
-                                "multiplier": 0.6
+                                "multiplier": 0.6,
+                                "setValue": "SQUAT"
                             },
                             {
                                 "reps": 3,
-                                "multiplier": 0.7
+                                "multiplier": 0.7,
+                                "setValue": "SQUAT"
                             },
                             {
                                 "reps": 5,
-                                "multiplier": 0.7
+                                "multiplier": 0.7,
+                                "setValue": "SQUAT"
                             },
                             {
                                 "reps": 7,
-                                "multiplier": 0.7
+                                "multiplier": 0.7,
+                                "setValue": "SQUAT"
                             },
                             {
                                 "reps": 4,
-                                "multiplier": 0.7
+                                "multiplier": 0.7,
+                                "setValue": "SQUAT"
                             },
                             {
                                 "reps": 6,
-                                "multiplier": 0.7
+                                "multiplier": 0.7,
+                                "setValue": "SQUAT"
                             },
                             {
                                 "reps": 8,
-                                "multiplier": 0.7
+                                "multiplier": 0.7,
+                                "setValue": "SQUAT"
                             }
                         ]
                     }
@@ -229,35 +238,43 @@
                         "sets": [
                             {
                                 "reps": 6,
-                                "multiplier": 0.4
+                                "multiplier": 0.4,
+                                "setValue": "BENCH"
                             },
                             {
                                 "reps": 5,
-                                "multiplier": 0.5
+                                "multiplier": 0.5,
+                                "setValue": "BENCH"
                             },
                             {
                                 "reps": 3,
-                                "multiplier": 0.6
+                                "multiplier": 0.6,
+                                "setValue": "BENCH"
                             },
                             {
                                 "reps": 5,
-                                "multiplier": 0.6
+                                "multiplier": 0.6,
+                                "setValue": "BENCH"
                             },
                             {
                                 "reps": 7,
-                                "multiplier": 0.6
+                                "multiplier": 0.6,
+                                "setValue": "BENCH"
                             },
                             {
                                 "reps": 4,
-                                "multiplier": 0.6
+                                "multiplier": 0.6,
+                                "setValue": "BENCH"
                             },
                             {
                                 "reps": 6,
-                                "multiplier": 0.6
+                                "multiplier": 0.6,
+                                "setValue": "BENCH"
                             },
                             {
                                 "reps": 8,
-                                "multiplier": 0.6
+                                "multiplier": 0.6,
+                                "setValue": "BENCH"
                             }
                         ]
                     }
@@ -316,35 +333,43 @@
                         "sets": [
                             {
                                 "reps": 5,
-                                "multiplier": 0.35
+                                "multiplier": 0.35,
+                                "setValue": "DEADLIFT"
                             },
                             {
                                 "reps": 5,
-                                "multiplier": 0.45
+                                "multiplier": 0.45,
+                                "setValue": "DEADLIFT"
                             },
                             {
                                 "reps": 3,
-                                "multiplier": 0.55
+                                "multiplier": 0.55,
+                                "setValue": "DEADLIFT"
                             },
                             {
                                 "reps": 5,
-                                "multiplier": 0.55
+                                "multiplier": 0.55,
+                                "setValue": "DEADLIFT"
                             },
                             {
                                 "reps": 7,
-                                "multiplier": 0.55
+                                "multiplier": 0.55,
+                                "setValue": "DEADLIFT"
                             },
                             {
                                 "reps": 4,
-                                "multiplier": 0.55
+                                "multiplier": 0.55,
+                                "setValue": "DEADLIFT"
                             },
                             {
                                 "reps": 6,
-                                "multiplier": 0.55
+                                "multiplier": 0.55,
+                                "setValue": "DEADLIFT"
                             },
                             {
                                 "reps": 8,
-                                "multiplier": 0.55
+                                "multiplier": 0.55,
+                                "setValue": "DEADLIFT"
                             }
                         ]
                     }
@@ -355,6 +380,7 @@
     {
         "program": "N_SUNS_5",
         "label": "nSuns 5 Day",
+        "inputs": ["SQUAT", "BENCH", "DEADLIFT", "OHP"],
         "days": []
     }
 ]

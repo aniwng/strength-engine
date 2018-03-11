@@ -9,7 +9,7 @@ class Routines extends Component {
         const listItems = days.map(day =>
             <div className="routine-container" key={day.day}>
                 <div className="day-of-week">{day.day}</div>
-                <Routine day={day.day} routines={day.routines} input={this.props.input}/>
+                <Routine day={day.day} routines={day.routines} inputs={this.props.inputs}/>
             </div>
         );
 
