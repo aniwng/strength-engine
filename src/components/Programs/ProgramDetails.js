@@ -10,7 +10,7 @@ class ProgramDetails extends Component {
                 <div className="program-details">
                     <h3>{this.props.details.label}</h3>
                     <div>
-                        <Routines days={this.props.details.days}/>
+                        <Routines days={this.props.details.days} input={this.props.input}/>
                     </div>    
                 </div>
             );

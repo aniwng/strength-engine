@@ -3,13 +3,21 @@ import Input from './Input';
 
 import './TrainingInputs.css';
 
-const TrainingInputs = () => (
-    <div className="training-input-container">
-        <Input label="Squat"/>
-        <Input label="Bench"/>
-        <Input label="Deadlift"/>
-        <Input label="Press"/>
-    </div>
-);
+class TrainingInputs extends Component {
+    trainingNumChange(trainingNum) {
+        this.props.onChange(trainingNum);
+    }
+
+    render() {
+        return (
+            <div className="training-input-container">
+                <Input label="Squat" onChange={this.trainingNumChange.bind(this)}/>
+                <Input label="Bench" onChange={this.trainingNumChange.bind(this)}/>
+                <Input label="Deadlift" onChange={this.trainingNumChange.bind(this)}/>
+                <Input label="Press" onChange={this.trainingNumChange.bind(this)}/>
+            </div>
+        );
+    }
+}
 
 export default TrainingInputs;

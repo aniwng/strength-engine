@@ -12,7 +12,8 @@ class Programs extends Component {
         super(props)
         this.state = {
             programList: [],
-            currentProgramDetails: {}
+            currentProgramDetails: {},
+            input: 100
         }
     }
 
@@ -34,14 +35,18 @@ class Programs extends Component {
         this.setState({currentProgramDetails: currentProgram});
     }
 
+    handleTrainingChange(trainingNum) {
+        this.setState({input: trainingNum});
+    }
+
     render() {
         return (
             <div>
                 <div id="user-input-container">
                     <Dropdown programList={this.state.programList} onChange={this.handleChange.bind(this)}/>
-                    <TrainingInputs/>
+                    <TrainingInputs onChange={this.handleTrainingChange.bind(this)}/>
                 </div>
-                <ProgramDetails details={this.state.currentProgramDetails}/>
+                <ProgramDetails details={this.state.currentProgramDetails} input={this.state.input}/>
             </div>    
         );
     }
