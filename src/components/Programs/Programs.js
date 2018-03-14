@@ -15,6 +15,8 @@ class Programs extends Component {
             currentProgramDetails: {},
             inputs: []
         }
+        this.handleChange = this.handleChange.bind(this);
+        this.handleTrainingChange = this.handleTrainingChange.bind(this);
     }
 
     componentDidMount() {
@@ -28,14 +30,15 @@ class Programs extends Component {
         this.handleChange(programList[0].program);
     }
 
+    shouldComponentUpdate() {
+        return true;
+    }
+
     handleChange(selectedProgram) {
         const currentProgram = ProgramData.find(program => {
             return program.program === selectedProgram;
         });
-        const inputValues = currentProgram.inputs.reduce((map, obj) => {
-            map.set(obj, 0);
-            return map;
-        }, new Map());
+        const inputValues = this.setupInputValues(currentProgram.inputs);
         this.setState({
             currentProgramDetails: currentProgram,
             inputs: inputValues
@@ -50,14 +53,33 @@ class Programs extends Component {
         });
     }
 
+    setupInputValues(inputs) {
+        const stateInputs = this.state.inputs;
+        console.log(stateInputs);
+        return inputs.reduce((map, obj) => {
+            const val = stateInputs.length ? stateInputs.get(obj) : 0;
+            map.set(obj, val);
+            return map;
+        }, new Map());
+    }
+
     render() {
         return (
             <div>
                 <div id="user-input-container">
-                    <Dropdown programList={this.state.programList} onChange={this.handleChange.bind(this)}/>
-                    <TrainingInputs inputs={this.state.inputs} onChange={this.handleTrainingChange.bind(this)}/>
+                    <Dropdown 
+                        programList={this.state.programList} 
+                        onChange={this.handleChange}
+                    />
+                    <TrainingInputs 
+                        inputs={this.state.inputs} 
+                        onChange={this.handleTrainingChange}
+                    />
                 </div>
-                <ProgramDetails details={this.state.currentProgramDetails} inputs={this.state.inputs}/>
+                <ProgramDetails 
+                    details={this.state.currentProgramDetails} 
+                    inputs={this.state.inputs}
+                />
             </div>    
         );
     }

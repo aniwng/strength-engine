@@ -3,6 +3,11 @@ import React, { Component } from 'react';
 import './Dropdown.css';
 
 class Dropdown extends Component {
+    constructor(props) {
+        super(props);
+        this.changeProgram = this.changeProgram.bind(this);
+    }
+
     changeProgram(e) {
         this.props.onChange(e.target.value);
     }
@@ -15,7 +20,7 @@ class Dropdown extends Component {
             </option>
         );
         return (
-            <select className="program-dropdown" onChange={this.changeProgram.bind(this)}>{listItems}</select> 
+            <select className="program-dropdown" onChange={this.changeProgram}>{listItems}</select> 
         );   
     }
 }
